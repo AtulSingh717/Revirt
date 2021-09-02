@@ -5,10 +5,10 @@ import './Cards.css';                     // As react-tilt is not compatible wit
 
 function Cards(props) {
 
-    // console.log(props.photos); -----    Recived the data(fetched from API) from the parent component
+    // console.log(props.photos);  ------- Recived the data(fetched from API) from the parent component
 
-     // Using map to create a card from the fetched data
-    const photos = props.photos.slice(0,5).map((photo) => { // Using slice to use only 5 arrays out of 5000 received arrays 
+     // Using map to create a card from the fetched data (5000 arrays)
+    const photos = props.photos.slice(0,7).map((photo) => { // Using slice to use only 7 arrays data to display out of 5000 received arrays 
            return   <div key={photo.id} className="col">
                         <Tilt>
                             <div className="card">

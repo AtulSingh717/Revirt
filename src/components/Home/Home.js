@@ -12,7 +12,7 @@ function Home() {
     useEffect(()=>{
         async function fetchData(){
             const response = await axios.get("https://jsonplaceholder.typicode.com/photos/")
-            // console.log(response.data);  -------  We get an object containing 5000 arrays from API
+            // console.log(response.data);  -------  We get 5000 arrays from API
             setPhotos(response.data);
         }
         fetchData();
